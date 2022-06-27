@@ -14,6 +14,7 @@ Get-ChildItem -recurse -include *.decrypted* | foreach-object { $name = $_.fulln
 This should wipe the file names and leave them to something like: 001.decrypted
 
 2.Under Assets/StreamingAssets
+
 ![image](https://user-images.githubusercontent.com/41769662/175868687-73f04ec6-b382-4f9f-8275-c02ca6ee2b98.png)
 
 Place Costumes under cs
@@ -21,6 +22,7 @@ Place Costumes under cs
 place Shader.decrypted in handmade
 
 place animation folders like this:
+
 ![image](https://user-images.githubusercontent.com/41769662/175869088-7f87bc2e-c4a0-49ca-8a89-0235353750be.png)
 
 Under mc
@@ -35,9 +37,11 @@ To play an animation:
 Under the scenes folder in assets open up TestScene.
 
 Click on the SceneSetup Gameobject
+
 ![image](https://user-images.githubusercontent.com/41769662/175869304-fbfadc77-e797-4c43-9ad8-9b07e62a8b9f.png)
 
 You should now see information on the right
+
 ![image](https://user-images.githubusercontent.com/41769662/175869349-69ccb37b-5300-4b71-ad64-e3624fc08082.png)
 
 DivaID is the diva 
@@ -53,6 +57,7 @@ DivaID is the diva
 10 - Lynn
 
 CostumeID is the id the costume has you can find it at the trailing end of a cs file
+
 ![image](https://user-images.githubusercontent.com/41769662/175869574-740e4b86-352a-4015-bb41-527bd59e6332.png)
 
 In the image above that is basically Mikumo Costume 1
