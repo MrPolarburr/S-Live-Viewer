@@ -10,7 +10,7 @@ You also need to remove the original file and the md5 file that was generated fr
 
 1. Open up powershell in the folder you want to pull files from and run:
 
-Get-ChildItem -recurse -include *.decrypted* | foreach-object { $name = $_.fullname; $newname = $name -replace '!.*\.','.'; rename-item $name $newname } 
+```Get-ChildItem -recurse -include *.decrypted* | foreach-object { $name = $_.fullname; $newname = $name -replace '!.*\.','.'; rename-item $name $newname }```
 
 This should wipe the file names and leave them to something like: 001.decrypted
 
