@@ -1,5 +1,7 @@
 # S-Live Viewer
  A WIP S-Live viewer for Uta Macross
+ 
+ REQUIRES UNITY 2020.3.30f1
 
 I will not be providing files you must provide those yourself
 
@@ -10,7 +12,7 @@ You also need to remove the original file and the md5 file that was generated fr
 
 1. Open up powershell in the folder you want to pull files from and run:
 
-Get-ChildItem -recurse -include *.decrypted* | foreach-object { $name = $_.fullname; $newname = $name -replace '!.*\.','.'; rename-item $name $newname } 
+``Get-ChildItem -recurse -include *.decrypted* | foreach-object { $name = $_.fullname; $newname = $name -replace '!.*\.','.'; rename-item $name $newname }``
 
 This should wipe the file names and leave them to something like: 001.decrypted
 
@@ -77,5 +79,12 @@ StEffects are the same as above. they can be found under the dr/st direction of 
 
 DVEffects and STEffects tend to not have any corrispondance so you have to sorta guess work on which is for what situation.
 
+For audio id recommend converting to .WAV then you just put into the project and drag and drop to the audio source
+
+![image](https://user-images.githubusercontent.com/41769662/175872914-67c8262a-2a1b-4608-b2fa-45bbe6bc77d1.png)
+
+
 then thats it! hit play and everything should load.
 
+
+Special thanks to chi for dealing with my BS and providing shader/general knowledge of the game
