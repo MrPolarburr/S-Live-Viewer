@@ -1,5 +1,7 @@
 # S-Live Viewer
  A WIP S-Live viewer for Uta Macross
+ 
+ REQUIRES UNITY 2020.3.30f1
 
 I will not be providing files you must provide those yourself
 
