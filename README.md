@@ -73,7 +73,9 @@ StageID is the stage number as above if its 0013 you would put 13
 
 DvEffects are the effects under the dr/dv directory of the animation folder. These change depending on either costume/diva feel free to experiment. You can load multiple at once by adding more to the list
 
-StEffects are the same as above. DVEffects and STEffects tend to not have any corrispondance so you have to sorta guess work on which is for what situation.
+StEffects are the same as above. they can be found under the dr/st direction of the animation folder. 
+
+DVEffects and STEffects tend to not have any corrispondance so you have to sorta guess work on which is for what situation.
 
 then thats it! hit play and everything should load.
 
