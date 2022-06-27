@@ -154,13 +154,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834df961b6c843244a1f46e814155cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  divaID: 2
-  costumeID: 1
+  divaID: 3
+  costumeID: 24
   colorVariants: 0
   colorID: 0
-  animationID: 20
+  animationID: 31
   stageID: 13
-  dvEffectIDs: 
+  dvEffectIDs: 01000000
   stEffectIDs: 01000000
   cam: {fileID: 9118914814168832173, guid: d1aa05466d51c3c4fbe95d9fddbd4a10, type: 3}
   facialHelper: {fileID: 1545177434520215833, guid: 33c9e53f356b40744ac5f0ca8666a51f, type: 3}
@@ -218,7 +218,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dbb401662fd69ed43a2690742ff317ca, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0cba45865ef10a140bcfdfb6d4f0defa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

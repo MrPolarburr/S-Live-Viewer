@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ValkyrieVariants
+  m_Shaders:
+  - first: {fileID: 4800000, guid: fc0ed5ad8722a3b41bfb865455b10593, type: 3}
+    second:
+      variants:
+      - keywords:
+        passType: 1
+      - keywords: SPOT
+        passType: 1
+      - keywords: POINT
+        passType: 1
+      - keywords: FOG_LINEAR
+        passType: 1
+      - keywords: FOG_LINEAR SPOT
+        passType: 1
+      - keywords: FOG_LINEAR POINT
+        passType: 1
+      - keywords: FOG_EXP
+        passType: 1
+      - keywords: FOG_EXP SPOT
+        passType: 1
+  - first: {fileID: 4800000, guid: c0c20c3589ec9ef4f86650d50235bbc8, type: 3}
+    second:
+      variants:
+      - keywords:
+        passType: 1
+      - keywords: SPOT
+        passType: 1
+      - keywords: POINT
+        passType: 1
+      - keywords: FOG_LINEAR
+        passType: 1
+      - keywords: FOG_LINEAR SPOT
+        passType: 1
+      - keywords: FOG_LINEAR POINT
+        passType: 1
+      - keywords: FOG_EXP
+        passType: 1
+      - keywords: FOG_EXP SPOT
+        passType: 1
+  - first: {fileID: 4800000, guid: 419f0cc4d88b2364aa467c205fd5ec93, type: 3}
+    second:
+      variants:
+      - keywords:
+        passType: 1
+      - keywords: SPOT
+        passType: 1
+      - keywords: POINT
+        passType: 1
+      - keywords: FOG_LINEAR
+        passType: 1
+      - keywords: FOG_LINEAR SPOT
+        passType: 1
+      - keywords: FOG_LINEAR POINT
+        passType: 1
+      - keywords: FOG_EXP
+        passType: 1
+      - keywords: FOG_EXP SPOT
+        passType: 1
