@@ -79,5 +79,12 @@ StEffects are the same as above. they can be found under the dr/st direction of 
 
 DVEffects and STEffects tend to not have any corrispondance so you have to sorta guess work on which is for what situation.
 
+For audio id recommend converting to .WAV then you just put into the project and drag and drop to the audio source
+
+![image](https://user-images.githubusercontent.com/41769662/175872914-67c8262a-2a1b-4608-b2fa-45bbe6bc77d1.png)
+
+
 then thats it! hit play and everything should load.
 
+
+Special thanks to chi for dealing with my BS and providing shader/general knowledge of the game
