@@ -1,6 +1,7 @@
 # S-Live Viewer
  A WIP S-Live viewer for Uta Macross
 
+I will not be providing files you must provide those yourself
 
 To load files:
 
