@@ -64,6 +64,9 @@ public class LoadScene : MonoBehaviour
         List<GameObject> prefabs = new List<GameObject>();
 
         float offset = offsets[divaID-1];
+        if(divaID == 9){
+            offset = 0;
+        }
 
         if(colorVariants){
             Debug.Log("Loading color variant: " + colorID);
@@ -124,6 +127,9 @@ public class LoadScene : MonoBehaviour
         List<AnimationClip> clips = new List<AnimationClip>();
 
         float offset = offsets[divaID-1];
+        if(divaID == 9){
+            offset = 0;
+        }
 
         if(divaID == 9){
             clips = await AssetBundleManager.LoadClipsFromBundle($"mc/{animationID.ToString("0000")}/bt002.decrypted");
@@ -131,7 +137,7 @@ public class LoadScene : MonoBehaviour
             clips = await AssetBundleManager.LoadClipsFromBundle($"mc/{animationID.ToString("0000")}/bt001.decrypted");
         }
         
-        facialHelper = Instantiate(facialHelper, Vector3.zero, Quaternion.identity);
+        facialHelper = Instantiate(facialHelper, Vector3.zero, Quaternion.identity, diva.transform);
         loadedObjects.Add(facialHelper);
         cam = Instantiate(cam, new Vector3(0,offset,0), Quaternion.identity);
         loadedObjects.Add(cam);
@@ -169,16 +175,21 @@ public class LoadScene : MonoBehaviour
     private async Task cleanShaders(GameObject obj){
         if (null == obj)
             return;
+        
+        if(obj.GetComponent<ParticleSystem>() != null){
+            obj.GetComponent<ParticleSystem>().GetComponent<Renderer>().material.shader = Shader.Find(obj.GetComponent<ParticleSystem>().GetComponent<Renderer>().material.shader.name);
+        }
+        
+        foreach(var ren in obj.GetComponentsInChildren<Renderer>()){
+                foreach(var mat in ren.materials){
+                    mat.shader = Shader.Find(mat.shader.name);
+            }
+        }
 
         foreach (Transform child in obj.transform){
             if (null == child)
                 continue;
             //child.gameobject contains the current child you can do whatever you want like add it to an array
-            foreach(var ren in obj.GetComponentsInChildren<Renderer>()){
-                    foreach(var mat in ren.materials){
-                        mat.shader = Shader.Find(mat.shader.name);
-                }
-            }
             cleanShaders(child.gameObject);
         }
     }
